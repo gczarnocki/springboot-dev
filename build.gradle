@@ -13,8 +13,8 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'gs-serving-web-content'
-    version =  '0.1.0'
+    baseName = 'springboot-dev'
+    version =  '0.0.3'
 }
 
 repositories {
@@ -25,8 +25,20 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    /* Web */
+    compile("org.springframework.boot:spring-boot-starter-web")
+
+    /* Database, JPA */
+    compile("mysql:mysql-connector-java")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    /* Frontend */
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
-    compile("org.springframework.boot:spring-boot-devtools")
+
+    /* Test */
     testCompile("org.springframework.boot:spring-boot-starter-test")
+
+    /* Other */
+    compile("org.springframework.boot:spring-boot-devtools")
 }
 

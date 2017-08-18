@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package hello;
+package io.github.gczarnocki.hello;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -54,5 +54,4 @@ public class ApplicationTest {
         mockMvc.perform(get("/greeting").param("name", "Greg"))
                 .andExpect(content().string(containsString("Hello, Greg!")));
     }
-
 }
