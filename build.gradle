@@ -7,6 +7,9 @@ buildscript {
     }
 }
 
+ext["thymeleaf.version"] = "3.0.7.RELEASE"
+ext["thymeleaf-layout-dialect.version"] = "2.2.2"
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -34,11 +37,17 @@ dependencies {
 
     /* Front-end */
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.2.2")
+
+    /* WebJARs */
+    compile('org.webjars:jquery:3.2.1')
+    compile('org.webjars:bootstrap:4.0.0-beta')
 
     /* Test */
     testCompile("org.springframework.boot:spring-boot-starter-test")
 
     /* Other */
     compile("org.springframework.boot:spring-boot-devtools")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
 }
 

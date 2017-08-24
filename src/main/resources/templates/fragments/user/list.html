@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org/"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+    <title>Users list</title>
+</head>
+<body>
+    <div layout:fragment="content" class="container">
+        <div th:each="user : ${list}" class="row">
+            <div class="col-md-6" th:text="${user.name}"/>
+            <div class="col-md-6" th:text="${user.email}"/>
+        </div>
+    </div>
+</body>
+</html>
