@@ -13,9 +13,10 @@ Features:
     - `spring-boot-starter-data-jpa`
     - `spring-boot-starter-thymeleaf`
     - `spring-boot-starter-test`
-    - `spring-boot-devtools`
 - MySQL integration via `mysql-connector-java` package
-- `spring-boot-devtools` for faster code changes.
+- `spring-boot-devtools` for faster code changes and hot-swapping,
+- `Thymeleaf Layout Dialect` for layout nesting and hierarchy,
+- `WebJARs`: `jQuery` and `Bootstrap` for front-end development.
 
 You can deploy this application to Tomcat using Eclipse. Build this application using `Gradle Wrapper`.
 
