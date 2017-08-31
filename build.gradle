@@ -42,6 +42,7 @@ dependencies {
     /* WebJARs */
     compile('org.webjars:jquery:3.2.1')
     compile('org.webjars:bootstrap:4.0.0-beta')
+    compile("org.webjars.bower:popper.js:1.11.1")
 
     /* Test */
     testCompile("org.springframework.boot:spring-boot-starter-test")
